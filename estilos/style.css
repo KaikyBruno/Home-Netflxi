@@ -1,0 +1,635 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+#icon{
+    color: red;
+    font-weight: bolder;
+    padding: 15px;
+    font-size: 3em;
+    text-shadow: 3px 2px 20px red;
+    margin: 20px;
+}
+#container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transform: translate(0px, -50px);
+    padding: 10px;
+}
+#idioma-mobile {
+    display: none;
+}
+#idioma {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.575);
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+#idioma:hover {
+    border: 3px solid white;
+    transition-duration: 0.1s;
+    box-sizing: border-box;
+}
+#entrar {
+    border: none;
+    background-color: red;
+    font-weight: bolder;
+    padding: 11px;
+    border-radius: 7px;
+    text-align: right;
+    margin-right: 20px;
+    
+}
+#entrar:hover {
+    cursor: pointer;
+    background-color: darkred;
+    transition-duration: 0.5s;
+}
+.pointer {
+    cursor: pointer;
+}
+header {
+    background-image: url(../imagens/fundo-netflix.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 60vw;
+}
+header h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+}
+header p  {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+    
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+#botao {
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 35%;
+    height: 40px;
+    padding: 6px;
+    border-radius: 3px;
+}
+#botao::placeholder{
+    color: rgba(255, 255, 255, 0.836);
+}
+#vamos-mobile {
+    display: none;
+}
+#vamos {
+    width: 13%;
+    background-color: rgb(197, 5, 5);
+    color: white;
+    padding: 6px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 3px;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+#vamos:hover {
+    background-color: rgb(146, 1, 1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+#espaçamento {
+    margin-top: 140px;
+}
+main {
+    height: 100vh;
+    background-color: black;
+}
+#propaganda > div {
+    background-image: linear-gradient(to bottom, #C70C1D 3%, #56153B,#291948, #0E1947);
+    margin: auto;
+    width: 75%;
+    height: 150px;
+    transform: translate(0px, -70px);
+    
+}
+#propaganda  h2 {
+    text-align: center;
+    padding-top: 40px;
+    
+}
+#propaganda p {
+    text-align: center;
+}
+#propaganda a {
+    color: #458CF4;
+}
+#aonde-assistir {
+    display: flex;
+    flex-direction:row;
+    height: 60%;
+}
+#aonde-assistir > #primeiro{
+    width: 50%;
+    
+}
+#aonde-assistir > #segundo{
+    width: 50%;
+    background: url(../imagens/tv-para-aondeassistir.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-y:top ;
+    background-position-x: center;
+    background-color: black;
+    
+}
+#aonde-assistir  h1{
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+#aonde-assistir  p {
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+.separamento {
+    width: 100%;
+    height: 8px;
+    background-color: #232323;
+}
+#assista-qualque-lugar > #primeiro-mobile{
+    display:none;
+}
+#assista-qualque-lugar > #segundo-mobile {
+    display: none;
+}
+#assista-qualque-lugar {
+    display: flex;
+    flex-direction:row;
+    height: 85%;
+}
+#assista-qualque-lugar > #primeiro {
+    width: 45%;
+    background: black url(../imagens/aparelhos-para-aondeassistir-transformed.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    margin-top: 50px;
+    
+
+}
+#assista-qualque-lugar > #segundo {
+    background-color: black;
+    width: 55%;
+    margin-top: 50px ;
+}
+#assista-qualque-lugar  h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: left;
+    padding-top: 15%;
+    
+}
+#assista-qualque-lugar  p {
+    font-size: 1.5em;
+    padding-top: 10px;
+    max-width: 500px;
+}
+#para-crianças {
+    display: flex;
+    justify-content: row;
+    background-color: black;
+    height: 85%;
+}
+#para-crianças  > #primeiro {
+    width: 50%;
+}
+#para-crianças  h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 150px;
+}
+#para-crianças p {
+    font-size: 1.5em;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+#para-crianças > #segundo {
+    width: 60%;
+    background: url(../imagens/para-criança.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+#baixe-series > #primeiro-mobile {
+    display: none;
+}
+#baixe-series > #segundo-mobile {
+    display: none;
+}
+#baixe-series {
+    display: flex;
+    justify-content: row;
+    height: 85%;
+}
+#baixe-series > #primeiro {
+    width: 50%;
+    background:black url(../imagens/baixar-series.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#baixe-series > #segundo {
+    width: 50%;
+    background-color: black;
+}
+#baixe-series > #segundo > h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: left;
+    
+    padding-top: 25%;   
+}
+#baixe-series > #segundo > p {
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+#perguntas {
+    background-color: black;
+}
+#perguntas > h1 {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 3em;
+}
+#perguntas > div {
+    background-color: #2D2D2D;
+    margin: auto;
+    width: 91%;
+    padding: 25px;
+    margin-bottom: 10px;
+    
+}
+#perguntas > div:hover {
+    background-color: #4E4E4E;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#perguntas i {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+#perguntas  a {
+    text-decoration: none;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.692);
+    margin-top:8px ;
+    display: flex;
+    align-items: center;
+   
+}
+#perguntas p {
+    text-align: center; 
+    font-size: 1.3em;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+#flexbox-espaçamento {
+    padding-bottom: 70px;
+}
+aside {
+    background-color: black;
+    
+}
+aside p {
+   color: #B3B3B3;
+    padding: 50px 30px 30px 40px;
+}
+aside > p > span {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #B3B3B3;
+}
+aside ul {
+    columns: 3;
+}
+aside li {
+    list-style-type: none;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    color: #B3B3B3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.espaçamento2 {
+    padding-top:  20px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+footer {
+    color:  #B3B3B3;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+footer > a {
+    color: #B3B3B3;
+    text-decoration: none;
+}
+footer > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 300px) and (max-width: 722px){
+    header {
+        height: 75vh;
+        background-size: cover;
+    }
+    #teste {
+        padding-top: 25px;
+        
+    }
+    #icon {
+        padding-left: 0;
+        font-size: 1.7em;
+    }
+    #idioma {
+        display: none;
+    }
+    #idioma-mobile {
+        display: block;
+        border: 1px solid white;
+        background-color: transparent;
+        padding: 7px;
+        border-radius: 2px;
+        margin-right: 10px;
+        margin-top: 8px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    #idioma-mobile:hover {
+        border: 3px solid white;
+        transition-duration: 0.1s;
+        box-sizing: border-box;
+    }
+    #entrar {
+        margin-top: 7px;
+        padding: 9px;
+        border-radius: 2px;
+    }
+    header #espaçamento {
+        margin-top: 13px;
+    }
+    header h1 {
+        font-size: 1.8em;
+        padding: 0px 20px 0px 20px;
+    }
+    header p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.2em;
+    }
+    #flexbox {
+        display: block;
+        
+    }
+    #botao {
+        width: 70%;
+        margin: auto;
+    }
+    #vamos-mobile {
+        display: block;
+        width: 130px;
+        background-color: rgb(197, 5, 5);
+        color: white;
+        padding: 20px;
+        border: none;
+        margin: auto;
+        margin-top: 5px;
+        border-radius: 3px;
+        font-size: 0.9em;
+        font-weight: bolder;
+    }
+    #vamos-mobile:hover {
+        background-color: rgb(146, 1, 1);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    #vamos {
+        display: none;
+    }
+    #propaganda {
+        padding-top: 15px;
+    }
+    #propaganda > div{
+        box-shadow: none;
+        background-image: linear-gradient(to bottom, #C70C1D 3%, #56153B,#291948, #0E1947);
+        width: 90%;
+        margin: auto;
+        transform: none;
+        height: 170px;
+    }
+    #propaganda h2  {
+        padding-left: 50px;
+        padding-right: 10px;
+        text-align: left; 
+        font-size: 1.2em;
+    }
+    #propaganda p {
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 10px;
+        font-size: 1em;
+    }
+    #aonde-assistir {
+        flex-direction: column;
+        height: 94%;
+    }
+    #aonde-assistir > #primeiro {
+        height: 30%;
+        width: 100%;
+    }
+    #aonde-assistir > #primeiro > h1 {
+        font-size: 2em;
+        text-align: center;
+        padding: 50px 0px 10px 0px;
+        
+    }
+    #aonde-assistir > #primeiro > p {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0px 20px 0px 20px;
+    }
+    #aonde-assistir > #segundo {
+        height: 70%;
+        width: 100%;
+        background-color: black;
+    }
+    #assista-qualque-lugar {
+        flex-direction: column;
+        height: 90%;
+    }
+    #assista-qualque-lugar > #primeiro-mobile{
+        display: block;
+        height: 30%;
+        width: 100%;
+        background-color: black;
+    }
+    #assista-qualque-lugar > #primeiro-mobile > h1 {
+        font-size: 2em;
+        text-align: center;
+        padding: 50px 0px 10px 0px;
+    }
+    #assista-qualque-lugar > #primeiro-mobile > p {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0px 20px 0px 20px;
+    }
+    #assista-qualque-lugar > #segundo-mobile{
+        display: block;
+        height: 70%;
+        width: 100%;
+        background-color: black;
+
+        background: black url(../imagens/aparelhos-para-aondeassistir-transformed.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+    #assista-qualque-lugar > #primeiro {
+       display: none;
+    }
+    #assista-qualque-lugar > #segundo {
+        display: none;
+    }
+    #para-crianças{
+        flex-direction: column;
+        height: 92%;
+    }
+    #para-crianças > #primeiro{
+        height: 40%;
+        width: 100%;
+    } 
+    #para-crianças > #primeiro > h1 {
+        font-size: 2em;
+        text-align: center;
+        padding: 50px 0px 10px 0px;
+    }
+    #para-crianças > #primeiro > p {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0px 20px 0px 20px;
+    }
+    #para-crianças > #segundo {
+        height: 60%;
+        width: 100%;
+        background-position: top center;
+    }
+    #baixe-series {
+        height: 94%;
+        flex-direction: column;
+    }
+    #baixe-series > #primeiro-mobile {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 30%;
+    }
+    #baixe-series > #primeiro-mobile > h1{
+        font-size: 2em;
+        text-align: center;
+        padding: 50px 0px 10px 0px;
+    }
+    #baixe-series > #primeiro-mobile > p {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0px 20px 0px 20px;
+    }
+    #baixe-series > #segundo-mobile {
+        display: block;
+        width: 100%;
+        height: 70%;
+
+        background:black url(../imagens/baixar-series.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+    #baixe-series > #primeiro {
+        display: none;
+    }
+    #baixe-series > #segundo {
+        display: none;
+    }
+    #perguntas > h1 {
+        font-size: 2em;
+        padding-bottom: 25px;
+    }
+    #perguntas > div {
+        width: 85%;
+        padding: 15px;
+        font-size: 0.7em;
+    }
+    #perguntas > p {
+        font-size: 1em;
+        text-align: center;
+        max-width: 350px;
+        margin: auto;
+    }
+    #perguntas .mobile {
+        display: block;
+        margin: auto;
+    }
+    #perguntas #espaçamento1 {
+        padding-top: 20px;
+    }
+    aside ul {
+        columns: 2;
+        
+    }
+    aside p {
+        padding-left: 25px;
+    }
+    aside li {
+        padding-bottom: 10px;
+        padding-left: 25px;
+    }
+    #espaçamento-mobile {
+        padding-left: 25px;
+    }
+    footer {
+        padding-left: 25px;
+    }
+}
+@media screen and (min-width: 722px) and (max-width: 1000px) {
+    header {
+        height: 100vh;
+    }
+    #propaganda div {
+        transform: none;
+    }
+}
